@@ -74,9 +74,15 @@ body {
     margin-bottom: 30px;
   }
   
+  form.d-flex {
+    margin-bottom: 30px; /* เพิ่มระยะห่างระหว่าง Search และการ์ด */
+    }
+  
   .card {
-    border: none;
+    border-radius: 8px;
     transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    overflow: hidden
   }
   
   .card:hover {
@@ -102,39 +108,6 @@ body {
   
   .card-text {
     color: #666;
-  }
-
-  /* Search Section */
-.search-container {
-    margin: 30px auto; /* เพิ่มระยะห่างรอบด้าน */
-    max-width: 800px;
-    text-align: center; /* จัดให้อยู่ตรงกลาง */
-  }
-  
-  .search-container input[type="text"] {
-    padding: 10px;
-    width: 60%; /* ปรับขนาดช่องค้นหา */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px; /* ระยะห่างระหว่างช่องค้นหาและปุ่ม */
-  }
-  
-  .search-container button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .search-container button:hover {
-    background-color: #555;
-  }
-  
-  /* เพิ่มระยะห่างจากส่วนการ์ด */
-  .cards-section {
-    margin-top: 40px; /* เพิ่มระยะห่างด้านบน */
   }
   
   /* Footer Styles */
