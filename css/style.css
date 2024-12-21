@@ -8,7 +8,7 @@ body {
 
   header {
     padding: 5px 15px;
-    background-color: #f8f9fa;
+    background-color: transparent;
   }
   
   header h1 {
@@ -21,6 +21,7 @@ body {
   /* Navbar Styles */
   .navbar {
     background-color: transparent;
+    padding: 8px 15px;
   }
   
   .navbar-brand {
