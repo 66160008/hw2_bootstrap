@@ -65,6 +65,33 @@ body {
     max-width: 1200px;
   }
   
+  .search-container {
+    margin: 20px auto; /* เพิ่มระยะห่างด้านบน-ล่าง */
+    max-width: 800px;
+    text-align: center; /* จัดตำแหน่งให้อยู่ตรงกลาง */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    width: 70%; /* กำหนดความกว้างของช่องค้นหา */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #555;
+  }
+  
   .highlight-section h2 {
     text-align: center;
     margin-bottom: 40px;
