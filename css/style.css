@@ -5,6 +5,34 @@ body {
     padding: 0;
     background-color: #f4f4f4;
   }
+  /* วิธีที่ 1: หากส่วนหัวมี id เช่น "header" */
+#header {
+    background-color: #333; /* สีเทาเข้ม คุณสามารถเปลี่ยนเป็นสีอื่นได้ เช่น #000 สำหรับสีดำ */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาวเพื่อให้มองเห็นได้ชัดเจนบนพื้นหลังสีเข้ม */
+    padding: 20px; /* เพิ่มระยะห่างภายในเพื่อความสวยงาม */
+  }
+  
+  /* วิธีที่ 2: หากส่วนหัวมี class เช่น "main-header" */
+  .main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* วิธีที่ 3: หากส่วนหัวใช้ <header> tag โดยตรง */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* วิธีที่ 4: หากต้องการกำหนดสีพื้นหลังให้ส่วนใดส่วนหนึ่งของหน้าเว็บ เช่น ส่วนที่มีข้อความ "ยินดีต้อนรับสู่โคราช" โดยใช้ class */
+  .dark-bg {
+      background-color: #333; /* หรือสีอื่น ๆ เช่น #222, #111 หรือ #000 */
+      color: white; /* สีตัวอักษร */
+      padding: 20px; /* ระยะห่างภายใน */
+      text-align: center; /* จัดข้อความไว้ตรงกลาง */
+  }
   
   /* Navbar Styles */
   .navbar {
