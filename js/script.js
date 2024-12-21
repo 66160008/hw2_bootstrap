@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var myCarousel = document.getElementById('heroCarousel');
     var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 5000, // Adjust auto-slide timing (in milliseconds)
+      interval: 2000, // Adjust auto-slide timing (in milliseconds)
       ride: 'carousel'
     });
   });
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
         behavior: 'smooth'
       });
     });
-  });  
+  }); 
