@@ -1,5 +1,5 @@
 # hw2_bootstrap
-# git clone repo url
+# git clone (https://github.com/66160008/hw2_bootstrap)
 # git git add .
 # git commit -m "init project"
 # git commit -m "เพิ่มโครงสร้าง Html พื้นฐาน"
@@ -20,3 +20,6 @@
 # git commit -m "ปรับปรุง css"
 # git commit -m "แก้ไขระยะห่างช่องค้นหา"
 # git commit -m "แก้ไขให้ Navbar เป็นพื้นหลัง"
+# git commit -m "สร้างเงาตัวอักษร"
+# git commit -m "เปลี่ยนสีพื้นหลัง"
+# git commit -m "ปรับการเลื่อนภาพ"
