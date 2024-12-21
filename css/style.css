@@ -5,15 +5,16 @@ body {
     padding: 0;
     background-color: #f4f4f4;
   }
-
+  
+  /* Header Styles */
   header {
-    padding: 5px 15px;
+    padding: 5px 10px; /* ลด Padding ให้บางลง */
     background-color: #f8f9fa;
   }
   
   header h1 {
-    font-size: 1.2rem;
-    margin: 5px 0;
+    font-size: 1.1rem; /* ลดขนาดข้อความ */
+    margin: 3px 0; /* ลดระยะ Margin */
     text-align: center;
     color: #333;
   }
@@ -21,18 +22,20 @@ body {
   /* Navbar Styles */
   .navbar {
     background-color: #333;
-    padding: 8px 15px;
+    padding: 8px 15px; /* ลด Padding */
   }
   
   .navbar-brand {
-    color: #333;
+    color: #fff;
     font-weight: bold;
+    font-size: 1rem;
     text-decoration: none;
   }
   
   .nav-link {
-    color: #333;
-    margin-right: 15px;
+    color: #fff;
+    margin-right: 10px; /* ลดระยะห่างระหว่างลิงก์ */
+    font-size: 0.9rem; /* ลดขนาดตัวอักษร */
     text-decoration: none;
   }
   
@@ -46,32 +49,33 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 60px 0; /* ลด Padding */
     text-align: center;
   }
   
   .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* ลดขนาดตัวอักษร */
+    margin-bottom: 15px;
   }
   
   .hero-section p {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* ลดขนาดตัวอักษร */
+    margin-bottom: 10px;
   }
   
   /* Highlight Section Styles */
   .container {
-    margin: 50px auto;
+    margin: 30px auto; /* ลด Margin */
     max-width: 1200px;
   }
   
   .highlight-section h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* ลด Margin */
   }
   
   .place-card {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* ลด Margin */
   }
   
   .card {
@@ -84,20 +88,20 @@ body {
   }
   
   .card-img-top {
-    height: 200px;
+    height: 180px; /* ลดความสูง */
     object-fit: cover;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid #ddd; /* ลดขอบ */
   }
   
   .card-body {
     background-color: #fff;
-    padding: 20px;
+    padding: 15px; /* ลด Padding */
     text-align: center;
   }
   
   .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem; /* ลดขนาดตัวอักษร */
+    margin-bottom: 8px;
   }
   
   .card-text {
@@ -108,21 +112,23 @@ body {
   .footer {
     background-color: #333;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0; /* ลด Padding */
   }
   
   .footer p {
     margin: 0;
+    font-size: 0.85rem; /* ลดขนาดตัวอักษร */
   }
   
   .footer a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px; /* ลดระยะห่าง */
+    font-size: 0.85rem;
   }
   
   .footer a:hover {
-    color: #333;
+    color: #ffcf55;
   }
   
   /* Responsive Styles */
