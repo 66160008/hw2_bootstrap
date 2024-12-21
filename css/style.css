@@ -1,39 +1,99 @@
+/* กำหนดสไตล์ให้กับกริดทั้งหมด */
 .grid-container {
     display: grid;
     grid-template-areas:
-    "header header header"
-    "nav main sidebar"
-    "footer footer footer";
+      "header header header"
+      "nav main sidebar"
+      "footer footer footer";
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     gap: 1rem;
     padding: 1rem;
-   }
-   .header {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header */
+  .header {
     grid-area: header;
-    background: #2196F3;
-    padding: 1rem;
+    background-color: #2196F3; /* สีฟ้า */
     color: white;
-   }
-   .nav {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Navigation */
+  .nav {
     grid-area: nav;
-    background: #64B5F6;
+    background-color: #64B5F6; /* สีฟ้าน้ำทะเลอ่อน */
     padding: 1rem;
-   }
-   .main {
+    border-radius: 8px;
+  }
+  
+  .nav p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Main content */
+  .main {
     grid-area: main;
-    background: #BBDEFB;
-    padding: 1rem;
-   }
-   .sidebar {
+    background-color: #BBDEFB; /* สีฟ้าน้ำทะเลอ่อนสุด */
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main p {
+    font-size: 1.1rem;
+  }
+  
+  /* Sidebar */
+  .sidebar {
     grid-area: sidebar;
-    background: #64B5F6;
+    background-color: #64B5F6; /* สีฟ้าน้ำทะเลอ่อน */
     padding: 1rem;
-   }
-   .footer {
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  /* Footer */
+  .footer {
     grid-area: footer;
-    background: #2196F3;
-    padding: 1rem;
+    background-color: #2196F3; /* สีฟ้า */
     color: white;
-   }
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* เพิ่มความสวยงามให้กับการจัดตำแหน่งของ text */
+  h1, p {
+    margin: 0;
+  }
+  
+  /* ทำให้รูปภาพในส่วนต่างๆ ยืดหยุ่นให้พอดีกับพื้นที่ */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* สไตล์ของการจัดการ grid สำหรับการแสดงผลในขนาดเล็ก (มือถือ) */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    }
+  }  
