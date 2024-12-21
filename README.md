@@ -1,1 +1,22 @@
 # hw2_bootstrap
+# git clone repo url
+# git git add .
+# git commit -m "init project"
+# git commit -m "เพิ่มโครงสร้าง Html พื้นฐาน"
+# git commit -m "เพิ่มไฟล์ Css"
+# git commit -m "เพิ่มโครงสร้าง Css พื้นฐาน"
+# git commit -m "แก้ไขคำผิด index" 
+# git commit -m "เพิ่มโครงสร้าง Contact พื้นฐาน"
+# git commit -m "เพิ่มไฟล์ Script พื้นฐาน"
+# git commit -m "แก้ไขไฟล์ index"
+# git commit -m "แก้ไขใส่สถานที่เพิ่ม index"
+# git commit -m "เพิ่มไฟล์โครงสร้าง places พื้นฐาน"
+# git commit -m "แก้ไขไฟล์ Contact"
+# git commit -m "แก้ไขไฟล์ทั้งหมด"
+# git commit -m "แก้ไขไฟล์ places"
+# git commit -m "แก้ไขไฟล์ Index" 
+# git commit -m "แก้ไฟล์ Css" 
+# git commit -m "เพิ่มโครงสร้าง js"
+# git commit -m "ปรับปรุง css"
+# git commit -m "แก้ไขระยะห่างช่องค้นหา"
+# git commit -m "แก้ไขให้ Navbar เป็นพื้นหลัง"
