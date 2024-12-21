@@ -64,6 +64,39 @@ body {
     margin: 50px auto;
     max-width: 1200px;
   }
+
+  /* Search Section */
+.search-container {
+    margin: 30px auto; /* เพิ่มระยะห่างรอบด้าน */
+    max-width: 800px;
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    width: 60%; /* ปรับขนาดช่องค้นหา */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* ระยะห่างระหว่างช่องค้นหาและปุ่ม */
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #555;
+  }
+  
+  /* เพิ่มระยะห่างจากส่วนการ์ด */
+  .cards-section {
+    margin-top: 40px; /* เพิ่มระยะห่างด้านบน */
+  }
   
   .highlight-section h2 {
     text-align: center;
@@ -77,7 +110,6 @@ body {
   .card {
     border: none;
     transition: transform 0.2s;
-    padding: 100;
   }
   
   .card:hover {
