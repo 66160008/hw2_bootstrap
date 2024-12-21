@@ -7,14 +7,15 @@ body {
   }
 
   header {
-    padding: 0px 0px; /* ลดระยะห่างด้านบนและด้านล่าง */
+    padding: 5px 15px; /* ลด Padding ให้บางลง */
     background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
   }
   
   header h1 {
-    font-size: 1.5rem; /* ลดขนาดของข้อความ */
-    margin: 0; /* ลบระยะห่างรอบ ๆ ข้อความ */
+    font-size: 1.2rem; /* ลดขนาดข้อความ */
+    margin: 5px 0; /* ลด Margin รอบข้อความ */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    color: #333;
   }
   
   /* Navbar Styles */
