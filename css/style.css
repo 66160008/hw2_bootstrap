@@ -10,12 +10,11 @@ body {
   /* Navbar Styles */
   .navbar {
     background-color: #333; /* Dark background for a sophisticated feel */
-    color: #f4f4f4;
     padding: 15px 30px;
   }
   
   .navbar-brand {
-    color: white; /* Gold color for a luxurious touch */
+    color: #333; /* Gold color for a luxurious touch */
     background-color: #333;
     font-weight: bold;
     text-decoration: none;
