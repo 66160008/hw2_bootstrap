@@ -1,99 +1,115 @@
-/* กำหนดสไตล์ให้กับกริดทั้งหมด */
 .grid-container {
     display: grid;
     grid-template-areas:
-      "header header header"
-      "nav main sidebar"
-      "footer footer footer";
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     gap: 1rem;
     padding: 1rem;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Header */
-  .header {
+   }
+   .header {
     grid-area: header;
-    background-color: #2196F3; /* สีฟ้า */
+    background: #2196F3;
+    padding: 1rem;
     color: white;
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  /* Navigation */
-  .nav {
+   }
+   .nav {
     grid-area: nav;
-    background-color: #64B5F6; /* สีฟ้าน้ำทะเลอ่อน */
+    background: #64B5F6;
     padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  .nav p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* Main content */
-  .main {
+   }
+   .main {
     grid-area: main;
-    background-color: #BBDEFB; /* สีฟ้าน้ำทะเลอ่อนสุด */
-    padding: 1.5rem;
-    border-radius: 8px;
-    color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .main p {
-    font-size: 1.1rem;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    grid-area: sidebar;
-    background-color: #64B5F6; /* สีฟ้าน้ำทะเลอ่อน */
+    background: #BBDEFB;
     padding: 1rem;
-    border-radius: 8px;
-    color: #333;
-  }
-  
-  /* Footer */
-  .footer {
-    grid-area: footer;
-    background-color: #2196F3; /* สีฟ้า */
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  /* เพิ่มความสวยงามให้กับการจัดตำแหน่งของ text */
-  h1, p {
-    margin: 0;
-  }
-  
-  /* ทำให้รูปภาพในส่วนต่างๆ ยืดหยุ่นให้พอดีกับพื้นที่ */
-  img {
+   }
+   /* กำหนดให้ .card มีขนาดเท่ากัน */
+#places .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* สร้างกริดที่มีคอลัมน์เท่ากัน */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+}
+
+.card {
+    border: none; /* ลบกรอบการ์ด */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้การ์ด */
+    transition: transform 0.3s ease; /* เพิ่มการเคลื่อนไหวเวลา hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* เมื่อ hover ขยายการ์ดเล็กน้อย */
+}
+
+/* ทำให้รูปภาพภายในการ์ดขยายเต็มพื้นที่ */
+.card-img-top {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  /* สไตล์ของการจัดการ grid สำหรับการแสดงผลในขนาดเล็ก (มือถือ) */
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "footer";
+    height: 200px; /* กำหนดความสูงเท่ากันสำหรับทุกภาพ */
+    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
+}
+
+/* ปรับให้ข้อความและข้อมูลภายในการ์ดจัดตำแหน่งได้ดี */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ปรับให้ขนาดหน้าจอเล็กลงแสดงผลเป็นแถวเดียว */
+@media (max-width: 768px) {
+    #places .row {
+        grid-template-columns: 1fr; /* แสดงผลเป็นคอลัมน์เดียวเมื่อหน้าจอเล็กลง */
     }
-  }  
+}
+   .sidebar {
+    grid-area: sidebar;
+    background: #64B5F6;
+    padding: 1rem;
+   }
+   .footer {
+    grid-area: footer;
+    background: #2196F3;
+    padding: 1rem;
+    color: white;
+   }
+   /* สําหรับแท็บเล็ต */
+@media (max-width: 768px) {
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    }
+   
+    .filter-btn {
+    flex: 0 1 calc(50% - 1rem);
+    }
+   }
+   /* สําหรับมือถือ */
+   @media (max-width: 480px) {
+    .gallery {
+    grid-template-columns: 1fr;
+    }
+   
+    .filter-btn {
+    flex: 1 1 100%;
+    }
+   
+    .header h1 {
+    font-size: 1.5rem;
+    }
+   }
