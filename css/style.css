@@ -28,7 +28,10 @@ body {
     color: #333;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: #ffcf55;
+  }
+
+  .navbar-brand:hover {
+    color: #ffcf55;
   }
   
   .nav-link {
