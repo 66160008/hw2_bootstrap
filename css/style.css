@@ -12,73 +12,28 @@
    }
    .header {
     grid-area: header;
-    background: #2196F3;
+    background: #313334;
     padding: 1rem;
     color: white;
    }
    .nav {
     grid-area: nav;
-    background: #64B5F6;
+    background: #313334;
     padding: 1rem;
    }
    .main {
     grid-area: main;
-    background: #BBDEFB;
+    background: white;
     padding: 1rem;
    }
-   /* กำหนดให้ .card มีขนาดเท่ากัน */
-#places .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* สร้างกริดที่มีคอลัมน์เท่ากัน */
-    gap: 20px; /* ระยะห่างระหว่างการ์ด */
-}
-
-.card {
-    border: none; /* ลบกรอบการ์ด */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้การ์ด */
-    transition: transform 0.3s ease; /* เพิ่มการเคลื่อนไหวเวลา hover */
-}
-
-.card:hover {
-    transform: scale(1.05); /* เมื่อ hover ขยายการ์ดเล็กน้อย */
-}
-
-/* ทำให้รูปภาพภายในการ์ดขยายเต็มพื้นที่ */
-.card-img-top {
-    width: 100%;
-    height: 200px; /* กำหนดความสูงเท่ากันสำหรับทุกภาพ */
-    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
-}
-
-/* ปรับให้ข้อความและข้อมูลภายในการ์ดจัดตำแหน่งได้ดี */
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* ปรับให้ขนาดหน้าจอเล็กลงแสดงผลเป็นแถวเดียว */
-@media (max-width: 768px) {
-    #places .row {
-        grid-template-columns: 1fr; /* แสดงผลเป็นคอลัมน์เดียวเมื่อหน้าจอเล็กลง */
-    }
-}
    .sidebar {
     grid-area: sidebar;
-    background: #64B5F6;
+    background: #313334;
     padding: 1rem;
    }
    .footer {
     grid-area: footer;
-    background: #2196F3;
+    background: #313334;
     padding: 1rem;
     color: white;
    }
