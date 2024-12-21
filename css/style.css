@@ -14,7 +14,7 @@ body {
   }
   
   .navbar-brand {
-    color: #f1c40f; /* Gold color for a luxurious touch */
+    color: #333; /* Gold color for a luxurious touch */
     font-weight: bold;
     text-decoration: none;
   }
@@ -26,7 +26,7 @@ body {
   }
   
   .nav-link:hover {
-    color: #f1c40f; /* Gold hover effect for links */
+    color: #333; /* Gold hover effect for links */
   }
   
   /* Hero Section Styles */
@@ -43,7 +43,7 @@ body {
   .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #f1c40f; /* Gold text for the main title */
+    color: #333; /* Gold text for the main title */
   }
   
   .hero-section p {
@@ -112,7 +112,7 @@ body {
   }
   
   .footer a {
-    color: #f1c40f; /* Gold for links */
+    color: #333; /* Gold for links */
     text-decoration: none;
     margin: 0 10px;
   }
