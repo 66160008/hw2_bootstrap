@@ -6,9 +6,16 @@ body {
     background-color: #f4f4f4;
   }
 
-header {
-    color: #333;
-}
+  header {
+    padding: 10px 20px; /* ลดระยะห่างด้านบนและด้านล่าง */
+    background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
+  }
+  
+  header h1 {
+    font-size: 1.5rem; /* ลดขนาดของข้อความ */
+    margin: 0; /* ลบระยะห่างรอบ ๆ ข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  }
   
   /* Navbar Styles */
   .navbar {
