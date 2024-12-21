@@ -5,34 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
   }
-  /* วิธีที่ 1: หากส่วนหัวมี id เช่น "header" */
-#header {
-    background-color: #333; /* สีเทาเข้ม คุณสามารถเปลี่ยนเป็นสีอื่นได้ เช่น #000 สำหรับสีดำ */
-    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาวเพื่อให้มองเห็นได้ชัดเจนบนพื้นหลังสีเข้ม */
-    padding: 20px; /* เพิ่มระยะห่างภายในเพื่อความสวยงาม */
-  }
-  
-  /* วิธีที่ 2: หากส่วนหัวมี class เช่น "main-header" */
-  .main-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* วิธีที่ 3: หากส่วนหัวใช้ <header> tag โดยตรง */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* วิธีที่ 4: หากต้องการกำหนดสีพื้นหลังให้ส่วนใดส่วนหนึ่งของหน้าเว็บ เช่น ส่วนที่มีข้อความ "ยินดีต้อนรับสู่โคราช" โดยใช้ class */
-  .dark-bg {
-      background-color: #333; /* หรือสีอื่น ๆ เช่น #222, #111 หรือ #000 */
-      color: white; /* สีตัวอักษร */
-      padding: 20px; /* ระยะห่างภายใน */
-      text-align: center; /* จัดข้อความไว้ตรงกลาง */
-  }
   
   /* Navbar Styles */
   .navbar {
@@ -56,23 +28,37 @@ body {
     color: #ffcf55;
   }
   
-  /* Hero Section Styles */
   .hero-section {
-    background-image: url('images/hero-bg.jpg');
+    background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
-    text-align: center;
   }
   
-  .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  .hero-section .display-4 {
+    font-size: 3.5rem;
+    font-weight: bold;
   }
   
-  .hero-section p {
-    font-size: 1.5rem;
+  .hero-section .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  .hero-section .btn-warning {
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+  }
+  
+  .hero-section .btn-warning:hover {
+    background-color: #e0b90f;
+    border-color: #e0b90f;
+  }
+  
+  /* Featured Destinations */
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
   }
   
   /* Highlight Section Styles */
