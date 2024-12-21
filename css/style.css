@@ -7,14 +7,14 @@ body {
   }
 
   header {
-    padding: 5px 15px; /* ลด Padding ให้บางลง */
-    background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
+    padding: 5px 15px;
+    background-color: #f8f9fa;
   }
   
   header h1 {
-    font-size: 1.2rem; /* ลดขนาดข้อความ */
-    margin: 5px 0; /* ลด Margin รอบข้อความ */
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-align: center;
     color: #333;
   }
   
@@ -22,6 +22,7 @@ body {
   .navbar {
     background-color: #333;
     padding: 10px 20px;
+    margin: 5px 0;
   }
   
   .navbar-brand {
