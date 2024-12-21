@@ -1,276 +1,100 @@
-/* ตั้งค่าทั่วไป */
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #4f4a45;
-}
-
-/* ส่วนหัวของเว็บไซต์ */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-/* เมนูนำทาง */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    color: #8c7b60;
-    text-decoration: underline;
-}
-
-/* ส่วนฮีโร่ */
-.hero {
-    text-align: center;
-    font-size: larger;
-    color: white;
-    padding: 2rem;
-    background-color: #333;
-}
-
-.hero h2 {
-    font-size: medium;
-    color: #6a5d4d;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* ส่วนไฮไลต์สถานที่ */
-.highlights {
-    text-align: center;
-    padding: 2rem;
-}
-
-.highlights h2 {
-    font-size: 2.5em;
-    color: #6a5d4d;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 0 20px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.card img:hover {
-    transform: scale(1.05);
-}
-
-/* ส่วนติดต่อเรา */
-.contact-form {
-    text-align: center;
-    padding: 2rem;
-}
-
-.contact-form h2 {
-    font-size: 2.5em;
-    color: #6a5d4d;
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: grid;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    font-size: 1.1em;
-    color: #4f4a45;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact-form button {
-    padding: 10px;
-    font-size: 1.2em;
-    background-color: #8c7b60;
-    color: white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #007bff;
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ddd !important;
+  }
+  
+  footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .card {
     border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  #heroCarousel .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  /* Hero Section */
+  #home {
+    padding: 100px 0;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  #home p {
+    font-size: 1.5rem;
+  }
+  
+  /* Highlight Section */
+  #highlights {
+    background-color: #ffffff;
+  }
+  
+  #highlights .card {
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #a89f91;
-}
-
-/* ฟุตเตอร์ */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Media Queries สำหรับหน้าจอขนาดเล็ก */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        margin: 10px 0;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .card img {
-        width: 100%;
-    }
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* ส่วนหัว */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-    color: #8c7b60;
-}
-
-/* ส่วนเนื้อหาหลัก */
-main {
+  }
+  
+  #highlights .card-title {
+    font-weight: bold;
+  }
+  
+  #highlights .card-body {
     padding: 20px;
-}
-
-/* สไตล์ของการ์ดสถานที่ท่องเที่ยว */
-article {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-article h2 {
-    font-size: 1.8rem;
-    color: #6a5d4d;
-}
-
-article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-}
-
-article p {
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-/* ฟุตเตอร์ */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 40px;
-}
-/* Media Query สำหรับอุปกรณ์ขนาดเล็ก */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+  }
+  
+  /* Footer Section */
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2.5rem;
     }
-
-    .cards {
-        grid-template-columns: 1fr;
+  
+    #home p {
+      font-size: 1.2rem;
     }
-
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-}
+  }  
