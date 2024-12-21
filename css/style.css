@@ -7,7 +7,7 @@ body {
   }
 
   header {
-    padding: 10px 20px; /* ลดระยะห่างด้านบนและด้านล่าง */
+    padding: 10px 10px; /* ลดระยะห่างด้านบนและด้านล่าง */
     background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
   }
   
