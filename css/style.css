@@ -1,70 +1,91 @@
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "nav main sidebar"
-    "footer footer footer";
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    gap: 1rem;
-    padding: 1rem;
-   }
-   .header {
-    grid-area: header;
-    background: #313334;
-    padding: 1rem;
-    color: white;
-   }
-   .nav {
-    grid-area: nav;
-    background: #313334;
-    padding: 1rem;
-   }
-   .main {
-    grid-area: main;
-    background: white;
-    padding: 1rem;
-   }
-   .sidebar {
-    grid-area: sidebar;
-    background: #313334;
-    padding: 1rem;
-   }
-   .footer {
-    grid-area: footer;
-    background: #313334;
-    padding: 1rem;
-    color: white;
-   }
-   /* สําหรับแท็บเล็ต */
-@media (max-width: 768px) {
-    .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    }
-   
-    .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    }
-   
-    .filter-btn {
-    flex: 0 1 calc(50% - 1rem);
-    }
-   }
-   /* สําหรับมือถือ */
-   @media (max-width: 480px) {
-    .gallery {
-    grid-template-columns: 1fr;
-    }
-   
-    .filter-btn {
-    flex: 1 1 100%;
-    }
-   
-    .header h1 {
+/* General Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar a.navbar-brand {
+    font-weight: bold;
     font-size: 1.5rem;
+    color: #007bff !important;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Hero Section Styling */
+  #home {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+  }
+  
+  /* Highlights Section */
+  #highlights {
+    background-color: #f8f9fa;
+  }
+  
+  #highlights h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2.5rem;
     }
-   }
+  
+    .card-body {
+      font-size: 0.9rem;
+    }
+  }  
