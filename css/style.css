@@ -131,7 +131,7 @@ body {
 
 /* ข้อความบน Overlay */
 .card .overlay .overlay-text {
-  color: #fff;
+  color: transparent;
   text-align: center;
   padding: 20px;
 }
