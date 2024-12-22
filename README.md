@@ -23,3 +23,8 @@
 # git commit -m "สร้างเงาตัวอักษร"
 # git commit -m "เปลี่ยนสีพื้นหลัง"
 # git commit -m "ปรับการเลื่อนภาพ"
+# git commit -m "สร้าง overlay"
+# git commit -m "เปลี่ยน title"
+# git commit -m "ทำฟอร์มแบบ modal"
+# git commit -m "finish"
+# git push
