@@ -131,6 +131,12 @@ body {
 
 /* ข้อความบน Overlay */
 .card .overlay .overlay-text {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.card .overlay .card-text {
   color: transparent;
   text-align: center;
   padding: 20px;
