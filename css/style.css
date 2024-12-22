@@ -68,20 +68,6 @@ body {
     margin: 50px auto;
     max-width: 1200px;
   }
-
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
-    padding: 20px;
-    border-radius: 10px; /* มุมโค้งมน */
-  }
-  
-  .carousel-caption h1 {
-    font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ */
-  }
-  
-  .carousel-caption p {
-    font-size: 1.2rem; /* ขนาดตัวอักษรรอง */
-  }  
   
   .highlight-section h2 {
     text-align: center;
@@ -284,3 +270,55 @@ body {
       text-align: center;
     }
   }
+  /* Carousel Overlay Styles */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* พื้นหลังโปร่งใส */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* มุมโค้งมน */
+}
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles for Carousel Overlay */
+@media (max-width: 1024px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 15px;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+}
