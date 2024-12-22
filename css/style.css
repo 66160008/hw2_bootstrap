@@ -1,310 +1,304 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-
-  header {
-    padding: 5px 15px;
-    background-color: #f8f9fa;
-  }
-  
-  header h1 {
-    font-size: 1.2rem;
-    margin: 5px 0;
-    text-align: center;
-    color: #333;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    background-color: #333;
-    padding: 8px 15px;
-  }
-  
-  .navbar-brand {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .navbar-brand:hover {
-    color: #ffcf55;
-  }
-  
-  .nav-link {
-    color: #333;
-    margin-right: 15px;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: #ffcf55;
-  }
-  
-  /* Hero Section Styles */
-  .hero-section {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-  }
-  
-  .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 1.5rem;
-  }
-  
-  /* Highlight Section Styles */
-  .container {
-    margin: 50px auto;
-    max-width: 1200px;
-  }
-  
-  .highlight-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .place-card {
-    margin-bottom: 30px;
-  }
-  
-  form.d-flex {
-    margin-bottom: 30px; /* เพิ่มระยะห่างระหว่าง Search และการ์ด */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-  
-  .card {
-    border-radius: 8px;
-    transition: transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
-    overflow: hidden
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .card-body {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    color: #666;
-  }
 
-  /* ปรับขนาด Overlay ให้ครอบคลุมการ์ด */
+header {
+  padding: 5px 15px;
+  background-color: #f8f9fa;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 8px 15px;
+}
+
+.navbar-brand {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #ffcf55;
+}
+
+.nav-link {
+  color: #333;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ffcf55;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+/* Highlight Section Styles */
+.container {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.highlight-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.place-card {
+  margin-bottom: 30px;
+}
+
+form.d-flex {
+  margin-bottom: 30px; /* เพิ่มระยะห่างระหว่าง Search และการ์ด */
+}
+
+.card {
+  border-radius: 8px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+  overflow: hidden
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+/* ปรับขนาด Overlay ให้ครอบคลุมการ์ด */
 .card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* พื้นหลังสีดำโปร่งแสง */
-  opacity: 0; /* ซ่อน Overlay เริ่มต้น */
-  transition: opacity 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6); /* พื้นหลังสีดำโปร่งแสง */
+opacity: 0; /* ซ่อน Overlay เริ่มต้น */
+transition: opacity 0.3s ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* ข้อความบน Overlay */
 .card .overlay .overlay-text {
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.card .overlay .card-text {
-  color: transparent;
-  text-align: center;
-  padding: 20px;
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+padding: 20px;
 }
 
 .card .overlay .btn {
-  margin-top: 10px;
+margin-top: 10px;
 }
 
 /* แสดง Overlay เมื่อ hover */
 .card:hover .overlay {
-  opacity: 1;
+opacity: 1;
 }
 
-  
-  /* Footer Styles */
-  .footer {
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #333;
+}
+
+/* Responsive Styles */
+
+/* For Large Screens (Desktop) */
+@media (max-width: 1200px) {
+  .container {
+    margin: 30px auto;
   }
-  
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+
+  .place-card img {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* For Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+}
+
+/* For Small Screens (Mobile) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    margin-right: 8px;
+  }
+
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .place-card img {
+    height: 150px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
   .footer p {
-    margin: 0;
+    font-size: 0.85rem;
   }
-  
+
   .footer a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 10px;
+    font-size: 0.85rem;
   }
-  
-  .footer a:hover {
-    color: #333;
+}
+
+/* For Extra Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 50px 0;
   }
-  
-  /* Responsive Styles */
-  
-  /* For Large Screens (Desktop) */
-  @media (max-width: 1200px) {
-    .container {
-      margin: 30px auto;
-    }
-  
-    .hero-section h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-section p {
-      font-size: 1.25rem;
-    }
-  
-    .place-card img {
-      height: 180px;
-    }
-  
-    .card-title {
-      font-size: 1.1rem;
-    }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
   }
-  
-  /* For Tablets (768px to 1024px) */
-  @media (max-width: 1024px) {
-    .hero-section {
-      padding: 80px 0;
-    }
-  
-    .hero-section h1 {
-      font-size: 2rem;
-    }
-  
-    .hero-section p {
-      font-size: 1.1rem;
-    }
-  
-    .card-img-top {
-      height: 160px;
-    }
-  
-    .card-title {
-      font-size: 1.15rem;
-    }
-  
-    .nav-link {
-      font-size: 0.9rem;
-      margin-right: 10px;
-    }
+
+  .hero-section p {
+    font-size: 0.9rem;
   }
-  
-  /* For Small Screens (Mobile) */
-  @media (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  
-    .navbar {
-      padding: 8px 15px;
-    }
-  
-    .navbar-brand {
-      font-size: 1.2rem;
-    }
-  
-    .nav-link {
-      font-size: 0.85rem;
-      margin-right: 8px;
-    }
-  
-    .hero-section {
-      padding: 60px 0;
-    }
-  
-    .hero-section h1 {
-      font-size: 1.75rem;
-    }
-  
-    .hero-section p {
-      font-size: 1rem;
-    }
-  
-    .place-card img {
-      height: 150px;
-    }
-  
-    .card-body {
-      padding: 15px;
-    }
-  
-    .card-title {
-      font-size: 1rem;
-    }
-  
-    .footer p {
-      font-size: 0.85rem;
-    }
-  
-    .footer a {
-      font-size: 0.85rem;
-    }
+
+  .place-card {
+    margin-bottom: 20px;
   }
-  
-  /* For Extra Small Screens (Mobile Portrait) */
-  @media (max-width: 480px) {
-    .hero-section {
-      padding: 50px 0;
-    }
-  
-    .hero-section h1 {
-      font-size: 1.5rem;
-    }
-  
-    .hero-section p {
-      font-size: 0.9rem;
-    }
-  
-    .place-card {
-      margin-bottom: 20px;
-    }
-  
-    .card-img-top {
-      height: 140px;
-    }
-  
-    .card-title {
-      font-size: 0.9rem;
-    }
-  
-    .navbar {
-      text-align: center;
-    }
+
+  .card-img-top {
+    height: 140px;
   }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+}
