@@ -302,3 +302,81 @@ opacity: 1;
     text-align: center;
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ส่วนหัว */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  color: #8c7b60;
+}
+
+/* ส่วนเนื้อหาหลัก */
+main {
+  padding: 20px;
+}
+
+/* สไตล์ของการ์ดสถานที่ท่องเที่ยว */
+article {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 1.8rem;
+  color: #6a5d4d;
+}
+
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+article p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* ฟุตเตอร์ */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 40px;
+}
