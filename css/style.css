@@ -132,6 +132,7 @@ justify-content: center;
 /* ข้อความบน Overlay */
 .card .overlay .overlay-text {
 color: black;
+background-color: transparent;
 text-align: center;
 padding: 20px;
 }
