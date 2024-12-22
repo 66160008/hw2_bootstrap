@@ -68,6 +68,20 @@ body {
     margin: 50px auto;
     max-width: 1200px;
   }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
+    padding: 20px;
+    border-radius: 10px; /* มุมโค้งมน */
+  }
+  
+  .carousel-caption h1 {
+    font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ */
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem; /* ขนาดตัวอักษรรอง */
+  }  
   
   .highlight-section h2 {
     text-align: center;
