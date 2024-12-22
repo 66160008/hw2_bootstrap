@@ -129,15 +129,27 @@ body {
   justify-content: center;
 }
 
-/* ข้อความบน Overlay */
+/* ข้อความบน Overlay พร้อมพื้นหลังโปร่งใส */
 .card .overlay .overlay-text {
-  color: transparent;
+  color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2); /* พื้นหลังสีขาวโปร่งแสง */
+  border-radius: 8px; /* เพิ่มขอบมน */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเพื่อให้ข้อความดูเด่นขึ้น */
 }
 
+/* ปุ่มภายใน Overlay */
 .card .overlay .btn {
   margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* ปุ่มมีพื้นหลังโปร่งใส */
+  color: #000; /* ตัวหนังสือในปุ่มสีดำ */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .overlay .btn:hover {
+  background-color: rgba(255, 255, 255, 1); /* ปรับปุ่มเมื่อ hover */
 }
 
 /* แสดง Overlay เมื่อ hover */
